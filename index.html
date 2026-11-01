@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3b1a2e">
+<meta name="description" content="Offline point-of-sale, stock and money records for a cosmetics shop.">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Shop POS">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<title>Cosmetics Shop POS</title>
+<link rel="stylesheet" href="./app.css">
+</head><body>
+<header><h1 id="hn">My Cosmetics Shop</h1><small id="ha"></small><button id="installApp" aria-label="Install app" title="Install app" style="position:absolute;right:54px;top:12px;height:34px;padding:0 9px;border:1px solid #e9669a;border-radius:8px;background:transparent;color:inherit;font-size:12px;font-weight:700;display:none" onclick="installApp()">Install</button><button id="hb" aria-label="How to use this system" onclick="go('help')">?</button></header>
+<main id="mn"></main>
+<nav id="nv"></nav>
+<button id="cb" aria-label="Calculator" onclick="calc()">🧮</button>
+<div id="md" class="hide"></div>
+<noscript><p style="padding:16px">This app needs JavaScript. Please turn it on in your browser.</p></noscript>
+<script src="./xlsx.min.js"></script>
+<script src="./pdf.js"></script>
+<script src="./exports.js"></script>
+<script src="./finder.js"></script>
+<script src="./app.js"></script>
+<script src="./pwa.js"></script>
+</body></html>
